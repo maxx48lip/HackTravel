@@ -112,6 +112,7 @@
 				5DC27D3823CE440E000F398A /* Sources */,
 				5DC27D3923CE440E000F398A /* Frameworks */,
 				5DC27D3A23CE440E000F398A /* Resources */,
+				5DC27D6723CE4E3E000F398A /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -197,6 +198,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DC27D6723CE4E3E000F398A /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "Frameworks/SwiftLint.framework/swiftlint --config .swiftlint.yml\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5DC27D3823CE440E000F398A /* Sources */ = {

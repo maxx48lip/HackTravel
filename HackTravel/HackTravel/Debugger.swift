@@ -10,7 +10,7 @@ import Foundation
 
 /// Дебаггер
 enum Debugger {
-	
+
 	/// Тип логгирования
 	enum LogType: String {
 		case info = "ℹ️ℹ️ℹ️ [Info] - "
@@ -28,7 +28,7 @@ enum Debugger {
 		let mainLogString = logString ?? "Trolling expected" + "\n"
 		let timestamp = DateFormatter.localizedString(from: NSDate() as Date, dateStyle: .short, timeStyle: .medium)
 		let suffix = "        "
-		
+
 		let result = prefix + mainLogString + suffix + timestamp
 		print(result)
 	}
