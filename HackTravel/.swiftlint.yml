@@ -54,3 +54,12 @@ identifier_name:
 
 nesting:
   type_level: 3
+
+custom_rules:
+  disable_print:
+    included: ".*\\.swift"
+    excluded: ".*Tests\\.swift"
+    name: "PrintUsage"
+    regex: "((\\bprint)|(debugPrint))\\s*\\("
+    message: "Необходимо использовать Debugger.log(type: LogType, logString: String?)"
+    severity: warning

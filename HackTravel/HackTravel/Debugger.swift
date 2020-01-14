@@ -25,11 +25,14 @@ enum Debugger {
 	///   - logString: строка логгирования
 	static func log(type: LogType, logString: String?) {
 		let prefix = type.rawValue
-		let mainLogString = logString ?? "Trolling expected" + "\n"
+		let mainLogString = logString ?? "Trolling expected"
 		let timestamp = DateFormatter.localizedString(from: NSDate() as Date, dateStyle: .short, timeStyle: .medium)
+		let emptyString = "\n"
 		let suffix = "        "
 
-		let result = prefix + mainLogString + suffix + timestamp
+		let result = prefix + mainLogString + emptyString + suffix + timestamp
+
+		// swiftlint:disable:next disable_print
 		print(result)
 	}
 }
