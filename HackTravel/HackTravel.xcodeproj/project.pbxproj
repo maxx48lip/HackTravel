@@ -14,6 +14,7 @@
 		5DC27D4A23CE440F000F398A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D4923CE440F000F398A /* Assets.xcassets */; };
 		5DC27D4D23CE440F000F398A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D4B23CE440F000F398A /* LaunchScreen.storyboard */; };
 		5DC27D5823CE4410000F398A /* HackTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D5723CE4410000F398A /* HackTravelTests.swift */; };
+		5DC27D6623CE4B86000F398A /* Debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D6523CE4B86000F398A /* Debugger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		5DC27D5323CE4410000F398A /* HackTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC27D5723CE4410000F398A /* HackTravelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackTravelTests.swift; sourceTree = "<group>"; };
 		5DC27D5923CE4410000F398A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC27D6523CE4B86000F398A /* Debugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				5DC27D3F23CE440E000F398A /* AppDelegate.swift */,
 				5DC27D4123CE440E000F398A /* ViewController.swift */,
+				5DC27D6523CE4B86000F398A /* Debugger.swift */,
 				5DC27D4323CE440E000F398A /* Main.storyboard */,
 				5DC27D4923CE440F000F398A /* Assets.xcassets */,
 				5DC27D4B23CE440F000F398A /* LaunchScreen.storyboard */,
@@ -202,6 +205,7 @@
 			files = (
 				5DC27D4823CE440E000F398A /* HackTravel.xcdatamodeld in Sources */,
 				5DC27D4223CE440E000F398A /* ViewController.swift in Sources */,
+				5DC27D6623CE4B86000F398A /* Debugger.swift in Sources */,
 				5DC27D4023CE440E000F398A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
