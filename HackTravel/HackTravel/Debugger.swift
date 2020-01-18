@@ -28,7 +28,7 @@ enum Debugger {
 		let mainLogString = logString ?? "Trolling expected"
 		let timestamp = DateFormatter.localizedString(from: NSDate() as Date, dateStyle: .short, timeStyle: .medium)
 		let emptyString = "\n"
-		let suffix = "        "
+		let suffix = "🕑 "
 
 		let result = prefix + mainLogString + emptyString + suffix + timestamp
 

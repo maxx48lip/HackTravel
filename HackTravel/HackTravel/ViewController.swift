@@ -13,7 +13,10 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = .red
-		Debugger.log(type: .info, logString: "Стартанул проект")
+		Debugger.log(type: .info, logString: "Загрузились вьюхи")
+		BaseChain.makeRequest(type: .test, completion: { data in
+			Debugger.log(type: .magic, logString: "\(String(data: data ?? Data(), encoding: .utf8) ?? "nil")")
+		})
 		// Do any additional setup after loading the view.
 	}
 }
