@@ -22,7 +22,7 @@ enum BaseChain {
 	///
 	/// - Parameters:
 	///   - type: Тип запроса(url)
-	///   - completion: Комплишн блок
+	///   - completion: Комплишн блок с данными
 	static func makeRequest(type: RequestType, completion: @escaping (Data?) -> Void) {
 		Debugger.log(type: .info, logString: "Запуск BaseChain")
 		let url = URL(string: type.rawValue)!

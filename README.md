@@ -1,9 +1,5 @@
-# HackTravel
+# Develop Some Useless stuff
 
-### Хакаем TravelMoscow Hackathon
+### Developers:
 
-[Задача №3](https://travelhack.moscow/task/panorama)
-
-### Authors: 
-- Yoav
-- Max
+- Pavlov Max

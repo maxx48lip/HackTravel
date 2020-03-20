@@ -12,10 +12,8 @@
 		5D7A50D823D4E7AB00EFA557 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A50D723D4E7AB00EFA557 /* CircleLoadingView.swift */; };
 		5DC27D4023CE440E000F398A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D3F23CE440E000F398A /* AppDelegate.swift */; };
 		5DC27D4223CE440E000F398A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D4123CE440E000F398A /* ViewController.swift */; };
-		5DC27D4523CE440E000F398A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D4323CE440E000F398A /* Main.storyboard */; };
 		5DC27D4823CE440E000F398A /* HackTravel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D4623CE440E000F398A /* HackTravel.xcdatamodeld */; };
 		5DC27D4A23CE440F000F398A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D4923CE440F000F398A /* Assets.xcassets */; };
-		5DC27D4D23CE440F000F398A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D4B23CE440F000F398A /* LaunchScreen.storyboard */; };
 		5DC27D5823CE4410000F398A /* HackTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D5723CE4410000F398A /* HackTravelTests.swift */; };
 		5DC27D6623CE4B86000F398A /* Debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D6523CE4B86000F398A /* Debugger.swift */; };
 		5DC27D6923CE5597000F398A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D6823CE5597000F398A /* README.md */; };
@@ -38,10 +36,8 @@
 		5DC27D3C23CE440E000F398A /* HackTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC27D3F23CE440E000F398A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DC27D4123CE440E000F398A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5DC27D4423CE440E000F398A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DC27D4723CE440E000F398A /* HackTravel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackTravel.xcdatamodel; sourceTree = "<group>"; };
 		5DC27D4923CE440F000F398A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5DC27D4C23CE440F000F398A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DC27D4E23CE440F000F398A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DC27D5323CE4410000F398A /* HackTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC27D5723CE4410000F398A /* HackTravelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackTravelTests.swift; sourceTree = "<group>"; };
@@ -68,6 +64,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D715C3A24251FB00012940F /* Semantic */ = {
+			isa = PBXGroup;
+			children = (
+				5D7A50D523D4E44100EFA557 /* ColorPallete.swift */,
+			);
+			name = Semantic;
+			sourceTree = "<group>";
+		};
+		5D715C3B24251FD00012940F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5D7A50D323D2886700EFA557 /* BaseChain.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		5D715C3C24251FE00012940F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5DC27D6523CE4B86000F398A /* Debugger.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		5D715C3E242520210012940F /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5DC27D4123CE440E000F398A /* ViewController.swift */,
+				5D715C402425218F0012940F /* Views */,
+			);
+			name = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		5D715C3F2425204C0012940F /* ModuleLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5D715C3A24251FB00012940F /* Semantic */,
+				5D715C3C24251FE00012940F /* Support */,
+				5D715C3B24251FD00012940F /* Network */,
+			);
+			name = ModuleLayer;
+			sourceTree = "<group>";
+		};
+		5D715C402425218F0012940F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D7A50D723D4E7AB00EFA557 /* CircleLoadingView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		5DC27D3323CE440E000F398A = {
 			isa = PBXGroup;
 			children = (
@@ -90,16 +137,11 @@
 		5DC27D3E23CE440E000F398A /* HackTravel */ = {
 			isa = PBXGroup;
 			children = (
-				5DC27D3F23CE440E000F398A /* AppDelegate.swift */,
-				5DC27D4123CE440E000F398A /* ViewController.swift */,
-				5D7A50D723D4E7AB00EFA557 /* CircleLoadingView.swift */,
-				5D7A50D523D4E44100EFA557 /* ColorPallete.swift */,
-				5D7A50D323D2886700EFA557 /* BaseChain.swift */,
-				5DC27D6523CE4B86000F398A /* Debugger.swift */,
-				5DC27D4323CE440E000F398A /* Main.storyboard */,
-				5DC27D4923CE440F000F398A /* Assets.xcassets */,
-				5DC27D4B23CE440F000F398A /* LaunchScreen.storyboard */,
 				5DC27D4E23CE440F000F398A /* Info.plist */,
+				5DC27D3F23CE440E000F398A /* AppDelegate.swift */,
+				5D715C3F2425204C0012940F /* ModuleLayer */,
+				5D715C3E242520210012940F /* PresentationLayer */,
+				5DC27D4923CE440F000F398A /* Assets.xcassets */,
 				5DC27D4623CE440E000F398A /* HackTravel.xcdatamodeld */,
 			);
 			path = HackTravel;
@@ -196,10 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DC27D4D23CE440F000F398A /* LaunchScreen.storyboard in Resources */,
 				5DC27D4A23CE440F000F398A /* Assets.xcassets in Resources */,
 				5DC27D6923CE5597000F398A /* README.md in Resources */,
-				5DC27D4523CE440E000F398A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,25 +305,6 @@
 			targetProxy = 5DC27D5423CE4410000F398A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5DC27D4323CE440E000F398A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DC27D4423CE440E000F398A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5DC27D4B23CE440F000F398A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DC27D4C23CE440F000F398A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5DC27D5A23CE4410000F398A /* Debug */ = {

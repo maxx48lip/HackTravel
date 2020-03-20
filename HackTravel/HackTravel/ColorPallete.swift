@@ -8,6 +8,8 @@
 
 import UIKit
 
+//TODO: Пересмотреть политику цветов
+
 /// Палитра цветов приложения
 enum ColorPallete {
 
