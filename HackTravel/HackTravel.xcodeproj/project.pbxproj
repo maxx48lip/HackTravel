@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5D7A50D423D2886700EFA557 /* BaseChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A50D323D2886700EFA557 /* BaseChain.swift */; };
+		5D7A50D623D4E44100EFA557 /* ColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A50D523D4E44100EFA557 /* ColorPallete.swift */; };
+		5D7A50D823D4E7AB00EFA557 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A50D723D4E7AB00EFA557 /* CircleLoadingView.swift */; };
 		5DC27D4023CE440E000F398A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D3F23CE440E000F398A /* AppDelegate.swift */; };
 		5DC27D4223CE440E000F398A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D4123CE440E000F398A /* ViewController.swift */; };
 		5DC27D4523CE440E000F398A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D4323CE440E000F398A /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		5D7A50D323D2886700EFA557 /* BaseChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChain.swift; sourceTree = "<group>"; };
+		5D7A50D523D4E44100EFA557 /* ColorPallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallete.swift; sourceTree = "<group>"; };
+		5D7A50D723D4E7AB00EFA557 /* CircleLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
 		5DC27D3C23CE440E000F398A /* HackTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC27D3F23CE440E000F398A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DC27D4123CE440E000F398A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 			children = (
 				5DC27D3F23CE440E000F398A /* AppDelegate.swift */,
 				5DC27D4123CE440E000F398A /* ViewController.swift */,
+				5D7A50D723D4E7AB00EFA557 /* CircleLoadingView.swift */,
+				5D7A50D523D4E44100EFA557 /* ColorPallete.swift */,
 				5D7A50D323D2886700EFA557 /* BaseChain.swift */,
 				5DC27D6523CE4B86000F398A /* Debugger.swift */,
 				5DC27D4323CE440E000F398A /* Main.storyboard */,
@@ -233,6 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D7A50D423D2886700EFA557 /* BaseChain.swift in Sources */,
+				5D7A50D623D4E44100EFA557 /* ColorPallete.swift in Sources */,
+				5D7A50D823D4E7AB00EFA557 /* CircleLoadingView.swift in Sources */,
 				5DC27D4823CE440E000F398A /* HackTravel.xcdatamodeld in Sources */,
 				5DC27D4223CE440E000F398A /* ViewController.swift in Sources */,
 				5DC27D6623CE4B86000F398A /* Debugger.swift in Sources */,
