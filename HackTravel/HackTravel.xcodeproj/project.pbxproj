@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D715C4424256C8A0012940F /* HandShakeGraphCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */; };
+		5D715C4624256CD90012940F /* HandShakeGraphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4524256CD90012940F /* HandShakeGraphCell.swift */; };
+		5D715C48242572530012940F /* HandShakeGraphItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C47242572530012940F /* HandShakeGraphItem.swift */; };
+		5D715C4C242587DA0012940F /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4B242587DA0012940F /* LineView.swift */; };
+		5D715C4E242614C40012940F /* HandShakeGraphStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4D242614C40012940F /* HandShakeGraphStartViewController.swift */; };
+		5D715C5024261BAD0012940F /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4F24261BAD0012940F /* GlobalConstants.swift */; };
+		5D715C5224261F450012940F /* HandShakeGraphStartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C5124261F450012940F /* HandShakeGraphStartBuilder.swift */; };
+		5D715C5424262B2B0012940F /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C5324262B2B0012940F /* StartButton.swift */; };
+		5D715C56242635440012940F /* GlobalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C55242635440012940F /* GlobalCoordinator.swift */; };
+		5D715C5A24263E7F0012940F /* ChainOfChainsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C5924263E7F0012940F /* ChainOfChainsCollectionView.swift */; };
+		5D715C5C24263ED90012940F /* ChainOfChainsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C5B24263ED90012940F /* ChainOfChainsItem.swift */; };
+		5D715C5E24263EE80012940F /* ChainOfChainsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C5D24263EE80012940F /* ChainOfChainsCell.swift */; };
 		5D7A50D423D2886700EFA557 /* BaseChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A50D323D2886700EFA557 /* BaseChain.swift */; };
 		5D7A50D623D4E44100EFA557 /* ColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A50D523D4E44100EFA557 /* ColorPallete.swift */; };
 		5D7A50D823D4E7AB00EFA557 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A50D723D4E7AB00EFA557 /* CircleLoadingView.swift */; };
 		5DC27D4023CE440E000F398A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D3F23CE440E000F398A /* AppDelegate.swift */; };
-		5DC27D4223CE440E000F398A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D4123CE440E000F398A /* ViewController.swift */; };
+		5DC27D4223CE440E000F398A /* HandShakeResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D4123CE440E000F398A /* HandShakeResultViewController.swift */; };
 		5DC27D4823CE440E000F398A /* HackTravel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D4623CE440E000F398A /* HackTravel.xcdatamodeld */; };
 		5DC27D4A23CE440F000F398A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D4923CE440F000F398A /* Assets.xcassets */; };
 		5DC27D5823CE4410000F398A /* HackTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D5723CE4410000F398A /* HackTravelTests.swift */; };
@@ -30,12 +42,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCollectionView.swift; sourceTree = "<group>"; };
+		5D715C4524256CD90012940F /* HandShakeGraphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCell.swift; sourceTree = "<group>"; };
+		5D715C47242572530012940F /* HandShakeGraphItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphItem.swift; sourceTree = "<group>"; };
+		5D715C4B242587DA0012940F /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		5D715C4D242614C40012940F /* HandShakeGraphStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphStartViewController.swift; sourceTree = "<group>"; };
+		5D715C4F24261BAD0012940F /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		5D715C5124261F450012940F /* HandShakeGraphStartBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphStartBuilder.swift; sourceTree = "<group>"; };
+		5D715C5324262B2B0012940F /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		5D715C55242635440012940F /* GlobalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalCoordinator.swift; sourceTree = "<group>"; };
+		5D715C5924263E7F0012940F /* ChainOfChainsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfChainsCollectionView.swift; sourceTree = "<group>"; };
+		5D715C5B24263ED90012940F /* ChainOfChainsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfChainsItem.swift; sourceTree = "<group>"; };
+		5D715C5D24263EE80012940F /* ChainOfChainsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfChainsCell.swift; sourceTree = "<group>"; };
 		5D7A50D323D2886700EFA557 /* BaseChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChain.swift; sourceTree = "<group>"; };
 		5D7A50D523D4E44100EFA557 /* ColorPallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallete.swift; sourceTree = "<group>"; };
 		5D7A50D723D4E7AB00EFA557 /* CircleLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
 		5DC27D3C23CE440E000F398A /* HackTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC27D3F23CE440E000F398A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5DC27D4123CE440E000F398A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DC27D4123CE440E000F398A /* HandShakeResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeResultViewController.swift; sourceTree = "<group>"; };
 		5DC27D4723CE440E000F398A /* HackTravel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackTravel.xcdatamodel; sourceTree = "<group>"; };
 		5DC27D4923CE440F000F398A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DC27D4E23CE440F000F398A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				5D7A50D523D4E44100EFA557 /* ColorPallete.swift */,
+				5D715C4F24261BAD0012940F /* GlobalConstants.swift */,
 			);
 			name = Semantic;
 			sourceTree = "<group>";
@@ -91,7 +116,11 @@
 		5D715C3E242520210012940F /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				5DC27D4123CE440E000F398A /* ViewController.swift */,
+				5D715C55242635440012940F /* GlobalCoordinator.swift */,
+				5DC27D4123CE440E000F398A /* HandShakeResultViewController.swift */,
+				5D715C4D242614C40012940F /* HandShakeGraphStartViewController.swift */,
+				5D715C5124261F450012940F /* HandShakeGraphStartBuilder.swift */,
+				5D715C49242586F40012940F /* CollectionView */,
 				5D715C402425218F0012940F /* Views */,
 			);
 			name = PresentationLayer;
@@ -111,8 +140,55 @@
 			isa = PBXGroup;
 			children = (
 				5D7A50D723D4E7AB00EFA557 /* CircleLoadingView.swift */,
+				5D715C4B242587DA0012940F /* LineView.swift */,
+				5D715C5324262B2B0012940F /* StartButton.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		5D715C49242586F40012940F /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5D715C5824263E560012940F /* ChainOfChains */,
+				5D715C5724263E410012940F /* SingleChain */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		5D715C4A2425870F0012940F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5D715C4524256CD90012940F /* HandShakeGraphCell.swift */,
+				5D715C47242572530012940F /* HandShakeGraphItem.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		5D715C5724263E410012940F /* SingleChain */ = {
+			isa = PBXGroup;
+			children = (
+				5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */,
+				5D715C4A2425870F0012940F /* Cells */,
+			);
+			name = SingleChain;
+			sourceTree = "<group>";
+		};
+		5D715C5824263E560012940F /* ChainOfChains */ = {
+			isa = PBXGroup;
+			children = (
+				5D715C5924263E7F0012940F /* ChainOfChainsCollectionView.swift */,
+				5D715C5F24268CE20012940F /* Cell */,
+			);
+			name = ChainOfChains;
+			sourceTree = "<group>";
+		};
+		5D715C5F24268CE20012940F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5D715C5B24263ED90012940F /* ChainOfChainsItem.swift */,
+				5D715C5D24263EE80012940F /* ChainOfChainsCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		5DC27D3323CE440E000F398A = {
@@ -279,12 +355,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D7A50D423D2886700EFA557 /* BaseChain.swift in Sources */,
+				5D715C5E24263EE80012940F /* ChainOfChainsCell.swift in Sources */,
+				5D715C4624256CD90012940F /* HandShakeGraphCell.swift in Sources */,
+				5D715C4424256C8A0012940F /* HandShakeGraphCollectionView.swift in Sources */,
 				5D7A50D623D4E44100EFA557 /* ColorPallete.swift in Sources */,
+				5D715C4E242614C40012940F /* HandShakeGraphStartViewController.swift in Sources */,
+				5D715C5024261BAD0012940F /* GlobalConstants.swift in Sources */,
 				5D7A50D823D4E7AB00EFA557 /* CircleLoadingView.swift in Sources */,
+				5D715C56242635440012940F /* GlobalCoordinator.swift in Sources */,
+				5D715C4C242587DA0012940F /* LineView.swift in Sources */,
+				5D715C5C24263ED90012940F /* ChainOfChainsItem.swift in Sources */,
 				5DC27D4823CE440E000F398A /* HackTravel.xcdatamodeld in Sources */,
-				5DC27D4223CE440E000F398A /* ViewController.swift in Sources */,
+				5DC27D4223CE440E000F398A /* HandShakeResultViewController.swift in Sources */,
+				5D715C5A24263E7F0012940F /* ChainOfChainsCollectionView.swift in Sources */,
 				5DC27D6623CE4B86000F398A /* Debugger.swift in Sources */,
 				5DC27D4023CE440E000F398A /* AppDelegate.swift in Sources */,
+				5D715C5424262B2B0012940F /* StartButton.swift in Sources */,
+				5D715C5224261F450012940F /* HandShakeGraphStartBuilder.swift in Sources */,
+				5D715C48242572530012940F /* HandShakeGraphItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

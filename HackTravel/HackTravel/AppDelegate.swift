@@ -18,9 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication,
 					 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-		Debugger.log(type: .info, logString: "Стартанул проект")
+		Debugger.log(type: .info, logString: "didFinishLaunchingWithOptions")
+		let navController = UINavigationController(rootViewController: GlobalCoordinator.rootViewController)
+		self.window.rootViewController = navController
 		self.window.makeKeyAndVisible()
-		self.window.rootViewController = ViewController()
 		return true
 	}
 }
