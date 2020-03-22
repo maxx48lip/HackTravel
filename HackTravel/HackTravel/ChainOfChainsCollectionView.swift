@@ -16,17 +16,14 @@ final class ChainOfChainsCollectionView: UICollectionView {
 	let layout = UICollectionViewFlowLayout()
 
 	init(frame: CGRect) {
-		items = [
-			ChainOfChainsItem(collectionView: HandShakeGraphCollectionView(frame: .zero)),
-			ChainOfChainsItem(collectionView: HandShakeGraphCollectionView(frame: .zero))
-		]
+		items = []
 		super.init(frame: frame, collectionViewLayout: layout)
 		register(ChainOfChainsCell.self, forCellWithReuseIdentifier: reuseId)
 		layout.itemSize = CGSize(width: 250, height: 400)
 		layout.scrollDirection = .horizontal
 		layout.minimumLineSpacing = 15
 		layout.minimumInteritemSpacing = 300
-		layout.sectionInset = UIEdgeInsets(top: 15, left: 0, bottom: 15, right: 0)
+		layout.sectionInset = UIEdgeInsets(top: 15, left: 10, bottom: 15, right: 10)
 		dataSource = self
 		allowsMultipleSelection = false
 		showsHorizontalScrollIndicator = false
@@ -40,7 +37,7 @@ final class ChainOfChainsCollectionView: UICollectionView {
 	}
 }
 
-//Гарантирую, что там только ячейки ChainOfChainsCell
+//Отвечаю, что там только ячейки ChainOfChainsCell
 //swiftlint:disable force_cast
 extension ChainOfChainsCollectionView: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView,

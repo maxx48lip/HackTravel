@@ -10,21 +10,26 @@ import UIKit
 
 final class HandShakeResultViewController: UIViewController {
 
-	//let testcollection = HandShakeGraphCollectionView(frame: .zero)
 	let testcollection = ChainOfChainsCollectionView(frame: .zero)
+	let builder = HandShakeResultItemBuilder()
 
 	// MARK: LifeCycle
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		navigationController?.setNavigationBarHidden(false, animated: true)
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = .white
-		Debugger.log(type: .info, logString: "Загрузились вьюхи")
+		Debugger.log(type: .info, logString: "\(self.debugDescription) viewDidLoad")
 
 		BaseChain.makeRequest(type: .test, completion: { data in
 			Debugger.log(type: .magic, logString: "\(String(data: data ?? Data(), encoding: .utf8) ?? "nil")")
 		})
 		//testLoadingView()
 		setupHandShakeGraphCollection()
+		testcollection.items = builder.makeItemsForResultCollectionFrom(data: FakeMakerData().makeFakeData())
 	}
 
 	// MARK: - Private methods

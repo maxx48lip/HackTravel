@@ -11,9 +11,9 @@ final class HandShakeGraphItem {
 
 	var name: String
 	var surname: String
-	var image: UIColor
+	var image: String
 
-	init(name: String, surname: String, image: UIColor) {
+	init(name: String, surname: String, image: String) {
 		self.name = name
 		self.surname = surname
 		self.image = image

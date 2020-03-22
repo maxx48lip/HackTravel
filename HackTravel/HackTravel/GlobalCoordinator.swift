@@ -12,6 +12,7 @@ final class GlobalCoordinator {
 	static let rootViewController = HandShakeGraphStartViewController()
 
 	static func open(_ viewcontroller: GlobalCoordinator.ControllerType) {
+		Debugger.log(type: .info, logString: "Open \(viewcontroller)")
 		switch viewcontroller {
 		case .handShakeGraphStartViewController:
 			rootViewController.navigationController?.pushViewController(HandShakeGraphStartViewController(), animated: true)

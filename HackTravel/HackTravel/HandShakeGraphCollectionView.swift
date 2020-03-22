@@ -14,16 +14,17 @@ final class HandShakeGraphCollectionView: UICollectionView {
 	var items: [HandShakeGraphItem]
 	let reuseId = "reuseId123"
 	let layout = UICollectionViewFlowLayout()
+	let testUrl = "https://sun9-65.userapi.com/c855428/v855428951/133d62/CJIm4GRvOiM.jpg"
 
 	init(frame: CGRect) {
 		items = [
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: .red),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: .red),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: .red),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: .red),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: .red),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: .red),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: .red)
+			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
+			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
+			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
+			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
+			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
+			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
+			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl)
 		]
 		super.init(frame: frame, collectionViewLayout: layout)
 		register(HandShakeGraphCell.self, forCellWithReuseIdentifier: reuseId)
@@ -45,7 +46,7 @@ final class HandShakeGraphCollectionView: UICollectionView {
 	}
 }
 
-//Гарантирую, что там только ячейки ChainOfChainsCell
+//Отвечаю, что там только ячейки ChainOfChainsCell
 //swiftlint:disable force_cast
 extension HandShakeGraphCollectionView: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView,

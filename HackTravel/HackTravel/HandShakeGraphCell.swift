@@ -20,15 +20,37 @@ final class HandShakeGraphCell: UICollectionViewCell {
 			labelSurName.text = surname
 		}
 	}
-	var image: UIColor? {
+	var image: String? {
 		didSet {
-			imageView.backgroundColor = image
+			imageView.backgroundColor = .lightGray
+			guard let sringWithUrl = image else {
+				Debugger.log(type: .error, logString: "Image url is nil")
+				return
+			}
+			makeImageFrom(stringWithUrl: sringWithUrl)
 		}
 	}
 
 	private let labelName = UILabel()
 	private let labelSurName = UILabel()
-	private let imageView = UIView()
+	private let imageView = UIImageView()
+
+	private func makeImageFrom(stringWithUrl: String) {
+		guard let url = URL(string: stringWithUrl) else {
+			Debugger.log(type: .error, logString: "Invalid url")
+			return
+		}
+
+		DispatchQueue.global().async {
+			guard let data = try? Data(contentsOf: url) else {
+				Debugger.log(type: .error, logString: "Image Data is nil")
+				return
+			}
+			DispatchQueue.main.async {
+				self.imageView.image = UIImage(data: data)
+			}
+		}
+	}
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -38,7 +60,7 @@ final class HandShakeGraphCell: UICollectionViewCell {
 
 		labelSurName.textAlignment = .center
 		labelSurName.textColor = .gray
-		imageView.layer.masksToBounds = false
+		imageView.layer.masksToBounds = true
 		imageView.layer.cornerRadius = 25
 		//backgroundColor = .green
 
