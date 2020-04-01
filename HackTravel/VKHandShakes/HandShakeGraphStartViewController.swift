@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Lottie
 
 final class HandShakeGraphStartViewController: UIViewController {
 
@@ -17,6 +18,7 @@ final class HandShakeGraphStartViewController: UIViewController {
 	let secondUserField: UITextField
 	let labelForSecondTextField: UILabel
 	let startButton: UIButton
+	let loadingAnimationView: AnimationView
 
 	// MARK: - Life cycle
 
@@ -39,6 +41,7 @@ final class HandShakeGraphStartViewController: UIViewController {
 		self.labelForFirstTextField = builder.makeLabelForTextField()
 		self.labelForSecondTextField = builder.makeLabelForTextField()
 		self.startButton = builder.makeStartButton()
+		self.loadingAnimationView = builder.makeAnimView()
 		super.init(nibName: nil, bundle: nil)
 	}
 
@@ -50,7 +53,8 @@ final class HandShakeGraphStartViewController: UIViewController {
 
 	private func setupUI() {
 		[labelForFirstTextField, firstUserField,
-		 labelForSecondTextField, secondUserField, startButton].forEach { addableView in
+		 labelForSecondTextField, secondUserField, startButton,
+		 loadingAnimationView].forEach { addableView in
 			addableView.translatesAutoresizingMaskIntoConstraints = false
 			self.view.addSubview(addableView)
 		}
@@ -82,7 +86,12 @@ final class HandShakeGraphStartViewController: UIViewController {
 											 constant: GlonalConstants.screenHeight * 0.58),
 			startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 			startButton.widthAnchor.constraint(equalToConstant: 100),
-			startButton.heightAnchor.constraint(equalToConstant: 40)
+			startButton.heightAnchor.constraint(equalToConstant: 40),
+			//LoadingAnimationView
+			loadingAnimationView.topAnchor.constraint(equalTo: secondUserField.bottomAnchor),
+			loadingAnimationView.bottomAnchor.constraint(equalTo: startButton.topAnchor),
+			loadingAnimationView.widthAnchor.constraint(equalToConstant: GlonalConstants.screenHeight * (0.58 - 0.4) - 13),
+			loadingAnimationView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
 		])
 	}
 }

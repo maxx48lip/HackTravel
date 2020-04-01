@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 final class HandShakeGraphStartBuilder {
 
@@ -35,7 +36,16 @@ final class HandShakeGraphStartBuilder {
 		return button
 	}
 
+	func makeAnimView() -> AnimationView {
+		let view = AnimationView(name: "Files/loading_dots")
+		view.contentMode = .scaleToFill
+		view.loopMode = .autoReverse
+		return view
+	}
+
 	@objc func startButtonAction() {
+		//loadingAnimationView.isHidden = true
+		//loadingAnimationView.play()
 		GlobalCoordinator.open(.handShakeResultViewController)
 	}
 }

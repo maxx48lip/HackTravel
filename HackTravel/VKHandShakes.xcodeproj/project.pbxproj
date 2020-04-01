@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0C780E2434DA1C000B786E /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 5D0C780D2434DA1C000B786E /* Files */; };
 		5D3265942434CF5C00950F31 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3265932434CF5C00950F31 /* Default-568h@2x.png */; };
 		5D715C4424256C8A0012940F /* HandShakeGraphCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */; };
 		5D715C4624256CD90012940F /* HandShakeGraphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4524256CD90012940F /* HandShakeGraphCell.swift */; };
@@ -33,6 +34,7 @@
 		5DC27D5823CE4410000F398A /* VKHandShakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D5723CE4410000F398A /* VKHandShakesTests.swift */; };
 		5DC27D6623CE4B86000F398A /* Debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D6523CE4B86000F398A /* Debugger.swift */; };
 		5DC27D6923CE5597000F398A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D6823CE5597000F398A /* README.md */; };
+		B705308F23EBAFD4BCC89C4B /* Pods_VKHandShakes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884648190E68EF9BBD6EF238 /* Pods_VKHandShakes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D0C780D2434DA1C000B786E /* Files */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Files; sourceTree = SOURCE_ROOT; };
 		5D3265932434CF5C00950F31 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCollectionView.swift; sourceTree = "<group>"; };
 		5D715C4524256CD90012940F /* HandShakeGraphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCell.swift; sourceTree = "<group>"; };
@@ -76,6 +79,9 @@
 		5DC27D5923CE4410000F398A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DC27D6523CE4B86000F398A /* Debugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugger.swift; sourceTree = "<group>"; };
 		5DC27D6823CE5597000F398A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		884648190E68EF9BBD6EF238 /* Pods_VKHandShakes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKHandShakes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0BB3F3B4FCBF3BDBCADEF7A /* Pods-VKHandShakes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKHandShakes.release.xcconfig"; path = "Target Support Files/Pods-VKHandShakes/Pods-VKHandShakes.release.xcconfig"; sourceTree = "<group>"; };
+		BFDFA9CD1258D9BE802EB5C6 /* Pods-VKHandShakes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKHandShakes.debug.xcconfig"; path = "Target Support Files/Pods-VKHandShakes/Pods-VKHandShakes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B705308F23EBAFD4BCC89C4B /* Pods_VKHandShakes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A4589E8B3A8D31C1337CCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				884648190E68EF9BBD6EF238 /* Pods_VKHandShakes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5D715C3A24251FB00012940F /* Semantic */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +256,8 @@
 				5DC27D3E23CE440E000F398A /* VKHandShakes */,
 				5DC27D5623CE4410000F398A /* VKHandShakesTests */,
 				5DC27D3D23CE440E000F398A /* Products */,
+				A2EA474A8C189C3E043E8185 /* Pods */,
+				14A4589E8B3A8D31C1337CCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,6 +278,7 @@
 				5D715C6A242697820012940F /* FakeMakerData.swift */,
 				5D715C3F2425204C0012940F /* ModuleLayer */,
 				5D715C3E242520210012940F /* PresentationLayer */,
+				5D0C780D2434DA1C000B786E /* Files */,
 				5DC27D4923CE440F000F398A /* Assets.xcassets */,
 				5DC27D4623CE440E000F398A /* HackTravel.xcdatamodeld */,
 			);
@@ -276,6 +294,15 @@
 			path = VKHandShakesTests;
 			sourceTree = "<group>";
 		};
+		A2EA474A8C189C3E043E8185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFDFA9CD1258D9BE802EB5C6 /* Pods-VKHandShakes.debug.xcconfig */,
+				A0BB3F3B4FCBF3BDBCADEF7A /* Pods-VKHandShakes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,10 +310,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5DC27D5C23CE4410000F398A /* Build configuration list for PBXNativeTarget "VKHandShakes" */;
 			buildPhases = (
+				777D16BFF9E473B36D851A63 /* [CP] Check Pods Manifest.lock */,
 				5DC27D3823CE440E000F398A /* Sources */,
 				5DC27D3923CE440E000F398A /* Frameworks */,
 				5DC27D3A23CE440E000F398A /* Resources */,
 				5DC27D6723CE4E3E000F398A /* Swift Lint */,
+				3D72B7530A3A8225E32C8FF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D0C780E2434DA1C000B786E /* Files in Resources */,
 				5DC27D4A23CE440F000F398A /* Assets.xcassets in Resources */,
 				5DC27D6923CE5597000F398A /* README.md in Resources */,
 				5D3265942434CF5C00950F31 /* Default-568h@2x.png in Resources */,
@@ -374,6 +404,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3D72B7530A3A8225E32C8FF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKHandShakes/Pods-VKHandShakes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKHandShakes/Pods-VKHandShakes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VKHandShakes/Pods-VKHandShakes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5DC27D6723CE4E3E000F398A /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,6 +438,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "Frameworks/SwiftLint.framework/swiftlint --config .swiftlint.yml\n\n";
+		};
+		777D16BFF9E473B36D851A63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKHandShakes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -561,6 +630,7 @@
 		};
 		5DC27D5D23CE4410000F398A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFDFA9CD1258D9BE802EB5C6 /* Pods-VKHandShakes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -579,6 +649,7 @@
 		};
 		5DC27D5E23CE4410000F398A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0BB3F3B4FCBF3BDBCADEF7A /* Pods-VKHandShakes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
