@@ -1,15 +1,15 @@
 //
-//  HackTravelTests.swift
-//  HackTravelTests
+//  VKHandShakesTests.swift
+//  VKHandShakesTests
 //
 //  Created by Max Pavlov on 14/01/2020.
 //  Copyright © 2020 Pavlov Max. All rights reserved.
 //
 
 import XCTest
-@testable import HackTravel
+@testable import VKHandShakes
 
-class HackTravelTests: XCTestCase {
+class VKHandShakesTests: XCTestCase {
 
     override func setUp() {
 		super.setUp()

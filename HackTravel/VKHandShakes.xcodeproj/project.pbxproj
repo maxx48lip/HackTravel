@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D3265942434CF5C00950F31 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3265932434CF5C00950F31 /* Default-568h@2x.png */; };
 		5D715C4424256C8A0012940F /* HandShakeGraphCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */; };
 		5D715C4624256CD90012940F /* HandShakeGraphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4524256CD90012940F /* HandShakeGraphCell.swift */; };
 		5D715C48242572530012940F /* HandShakeGraphItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C47242572530012940F /* HandShakeGraphItem.swift */; };
@@ -29,7 +30,7 @@
 		5DC27D4223CE440E000F398A /* HandShakeResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D4123CE440E000F398A /* HandShakeResultViewController.swift */; };
 		5DC27D4823CE440E000F398A /* HackTravel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D4623CE440E000F398A /* HackTravel.xcdatamodeld */; };
 		5DC27D4A23CE440F000F398A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D4923CE440F000F398A /* Assets.xcassets */; };
-		5DC27D5823CE4410000F398A /* HackTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D5723CE4410000F398A /* HackTravelTests.swift */; };
+		5DC27D5823CE4410000F398A /* VKHandShakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D5723CE4410000F398A /* VKHandShakesTests.swift */; };
 		5DC27D6623CE4B86000F398A /* Debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D6523CE4B86000F398A /* Debugger.swift */; };
 		5DC27D6923CE5597000F398A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D6823CE5597000F398A /* README.md */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D3265932434CF5C00950F31 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCollectionView.swift; sourceTree = "<group>"; };
 		5D715C4524256CD90012940F /* HandShakeGraphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCell.swift; sourceTree = "<group>"; };
 		5D715C47242572530012940F /* HandShakeGraphItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphItem.swift; sourceTree = "<group>"; };
@@ -63,14 +65,14 @@
 		5D7A50D323D2886700EFA557 /* BaseChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChain.swift; sourceTree = "<group>"; };
 		5D7A50D523D4E44100EFA557 /* ColorPallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallete.swift; sourceTree = "<group>"; };
 		5D7A50D723D4E7AB00EFA557 /* CircleLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
-		5DC27D3C23CE440E000F398A /* HackTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC27D3C23CE440E000F398A /* VKHandShakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKHandShakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC27D3F23CE440E000F398A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DC27D4123CE440E000F398A /* HandShakeResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeResultViewController.swift; sourceTree = "<group>"; };
 		5DC27D4723CE440E000F398A /* HackTravel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackTravel.xcdatamodel; sourceTree = "<group>"; };
 		5DC27D4923CE440F000F398A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DC27D4E23CE440F000F398A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DC27D5323CE4410000F398A /* HackTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DC27D5723CE4410000F398A /* HackTravelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackTravelTests.swift; sourceTree = "<group>"; };
+		5DC27D5323CE4410000F398A /* VKHandShakesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKHandShakesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC27D5723CE4410000F398A /* VKHandShakesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKHandShakesTests.swift; sourceTree = "<group>"; };
 		5DC27D5923CE4410000F398A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DC27D6523CE4B86000F398A /* Debugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugger.swift; sourceTree = "<group>"; };
 		5DC27D6823CE5597000F398A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -234,9 +236,10 @@
 		5DC27D3323CE440E000F398A = {
 			isa = PBXGroup;
 			children = (
+				5D3265932434CF5C00950F31 /* Default-568h@2x.png */,
 				5DC27D6823CE5597000F398A /* README.md */,
-				5DC27D3E23CE440E000F398A /* HackTravel */,
-				5DC27D5623CE4410000F398A /* HackTravelTests */,
+				5DC27D3E23CE440E000F398A /* VKHandShakes */,
+				5DC27D5623CE4410000F398A /* VKHandShakesTests */,
 				5DC27D3D23CE440E000F398A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -244,13 +247,13 @@
 		5DC27D3D23CE440E000F398A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5DC27D3C23CE440E000F398A /* HackTravel.app */,
-				5DC27D5323CE4410000F398A /* HackTravelTests.xctest */,
+				5DC27D3C23CE440E000F398A /* VKHandShakes.app */,
+				5DC27D5323CE4410000F398A /* VKHandShakesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5DC27D3E23CE440E000F398A /* HackTravel */ = {
+		5DC27D3E23CE440E000F398A /* VKHandShakes */ = {
 			isa = PBXGroup;
 			children = (
 				5DC27D4E23CE440F000F398A /* Info.plist */,
@@ -261,24 +264,24 @@
 				5DC27D4923CE440F000F398A /* Assets.xcassets */,
 				5DC27D4623CE440E000F398A /* HackTravel.xcdatamodeld */,
 			);
-			path = HackTravel;
+			path = VKHandShakes;
 			sourceTree = "<group>";
 		};
-		5DC27D5623CE4410000F398A /* HackTravelTests */ = {
+		5DC27D5623CE4410000F398A /* VKHandShakesTests */ = {
 			isa = PBXGroup;
 			children = (
-				5DC27D5723CE4410000F398A /* HackTravelTests.swift */,
+				5DC27D5723CE4410000F398A /* VKHandShakesTests.swift */,
 				5DC27D5923CE4410000F398A /* Info.plist */,
 			);
-			path = HackTravelTests;
+			path = VKHandShakesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5DC27D3B23CE440E000F398A /* HackTravel */ = {
+		5DC27D3B23CE440E000F398A /* VKHandShakes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5DC27D5C23CE4410000F398A /* Build configuration list for PBXNativeTarget "HackTravel" */;
+			buildConfigurationList = 5DC27D5C23CE4410000F398A /* Build configuration list for PBXNativeTarget "VKHandShakes" */;
 			buildPhases = (
 				5DC27D3823CE440E000F398A /* Sources */,
 				5DC27D3923CE440E000F398A /* Frameworks */,
@@ -289,14 +292,14 @@
 			);
 			dependencies = (
 			);
-			name = HackTravel;
+			name = VKHandShakes;
 			productName = HackTravel;
-			productReference = 5DC27D3C23CE440E000F398A /* HackTravel.app */;
+			productReference = 5DC27D3C23CE440E000F398A /* VKHandShakes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5DC27D5223CE4410000F398A /* HackTravelTests */ = {
+		5DC27D5223CE4410000F398A /* VKHandShakesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5DC27D5F23CE4410000F398A /* Build configuration list for PBXNativeTarget "HackTravelTests" */;
+			buildConfigurationList = 5DC27D5F23CE4410000F398A /* Build configuration list for PBXNativeTarget "VKHandShakesTests" */;
 			buildPhases = (
 				5DC27D4F23CE4410000F398A /* Sources */,
 				5DC27D5023CE4410000F398A /* Frameworks */,
@@ -307,9 +310,9 @@
 			dependencies = (
 				5DC27D5523CE4410000F398A /* PBXTargetDependency */,
 			);
-			name = HackTravelTests;
+			name = VKHandShakesTests;
 			productName = HackTravelTests;
-			productReference = 5DC27D5323CE4410000F398A /* HackTravelTests.xctest */;
+			productReference = 5DC27D5323CE4410000F398A /* VKHandShakesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -331,7 +334,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5DC27D3723CE440E000F398A /* Build configuration list for PBXProject "HackTravel" */;
+			buildConfigurationList = 5DC27D3723CE440E000F398A /* Build configuration list for PBXProject "VKHandShakes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -344,8 +347,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5DC27D3B23CE440E000F398A /* HackTravel */,
-				5DC27D5223CE4410000F398A /* HackTravelTests */,
+				5DC27D3B23CE440E000F398A /* VKHandShakes */,
+				5DC27D5223CE4410000F398A /* VKHandShakesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -357,6 +360,7 @@
 			files = (
 				5DC27D4A23CE440F000F398A /* Assets.xcassets in Resources */,
 				5DC27D6923CE5597000F398A /* README.md in Resources */,
+				5D3265942434CF5C00950F31 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DC27D5823CE4410000F398A /* HackTravelTests.swift in Sources */,
+				5DC27D5823CE4410000F398A /* VKHandShakesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +437,7 @@
 /* Begin PBXTargetDependency section */
 		5DC27D5523CE4410000F398A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5DC27D3B23CE440E000F398A /* HackTravel */;
+			target = 5DC27D3B23CE440E000F398A /* VKHandShakes */;
 			targetProxy = 5DC27D5423CE4410000F398A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -561,13 +565,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5PFXU6236;
-				INFOPLIST_FILE = HackTravel/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VKHandShakes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HackTeam.HackTravel;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = HackTeam.VKHandShakes;
+				PRODUCT_NAME = VKHandShakes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -579,13 +583,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5PFXU6236;
-				INFOPLIST_FILE = HackTravel/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VKHandShakes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HackTeam.HackTravel;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = HackTeam.VKHandShakes;
+				PRODUCT_NAME = VKHandShakes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -598,17 +602,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5PFXU6236;
-				INFOPLIST_FILE = HackTravelTests/Info.plist;
+				INFOPLIST_FILE = VKHandShakesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HackTeam.HackTravelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = HackTeam.VKHandShakesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackTravel.app/HackTravel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VKHandShakes.app/VKHandShakes";
 			};
 			name = Debug;
 		};
@@ -619,24 +623,24 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5PFXU6236;
-				INFOPLIST_FILE = HackTravelTests/Info.plist;
+				INFOPLIST_FILE = VKHandShakesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HackTeam.HackTravelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = HackTeam.VKHandShakesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackTravel.app/HackTravel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VKHandShakes.app/VKHandShakes";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5DC27D3723CE440E000F398A /* Build configuration list for PBXProject "HackTravel" */ = {
+		5DC27D3723CE440E000F398A /* Build configuration list for PBXProject "VKHandShakes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5DC27D5A23CE4410000F398A /* Debug */,
@@ -645,7 +649,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DC27D5C23CE4410000F398A /* Build configuration list for PBXNativeTarget "HackTravel" */ = {
+		5DC27D5C23CE4410000F398A /* Build configuration list for PBXNativeTarget "VKHandShakes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5DC27D5D23CE4410000F398A /* Debug */,
@@ -654,7 +658,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DC27D5F23CE4410000F398A /* Build configuration list for PBXNativeTarget "HackTravelTests" */ = {
+		5DC27D5F23CE4410000F398A /* Build configuration list for PBXNativeTarget "VKHandShakesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5DC27D6023CE4410000F398A /* Debug */,
