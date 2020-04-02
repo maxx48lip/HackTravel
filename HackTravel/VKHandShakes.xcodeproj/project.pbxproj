@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5D0C780E2434DA1C000B786E /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 5D0C780D2434DA1C000B786E /* Files */; };
+		5D0C78102434F7C2000B786E /* HandShakeGraphStartViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C780F2434F7C2000B786E /* HandShakeGraphStartViewController+Constraints.swift */; };
+		5D0C78122434F87F000B786E /* TestApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C78112434F87F000B786E /* TestApiView.swift */; };
+		5D0C78142434FD82000B786E /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C78132434FD82000B786E /* APIResponseModel.swift */; };
+		5D0C781624350366000B786E /* AlertsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C781524350366000B786E /* AlertsAssembly.swift */; };
 		5D3265942434CF5C00950F31 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3265932434CF5C00950F31 /* Default-568h@2x.png */; };
 		5D715C4424256C8A0012940F /* HandShakeGraphCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */; };
 		5D715C4624256CD90012940F /* HandShakeGraphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4524256CD90012940F /* HandShakeGraphCell.swift */; };
@@ -49,6 +53,10 @@
 
 /* Begin PBXFileReference section */
 		5D0C780D2434DA1C000B786E /* Files */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Files; sourceTree = SOURCE_ROOT; };
+		5D0C780F2434F7C2000B786E /* HandShakeGraphStartViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HandShakeGraphStartViewController+Constraints.swift"; sourceTree = "<group>"; };
+		5D0C78112434F87F000B786E /* TestApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiView.swift; sourceTree = "<group>"; };
+		5D0C78132434FD82000B786E /* APIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
+		5D0C781524350366000B786E /* AlertsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsAssembly.swift; sourceTree = "<group>"; };
 		5D3265932434CF5C00950F31 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCollectionView.swift; sourceTree = "<group>"; };
 		5D715C4524256CD90012940F /* HandShakeGraphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCell.swift; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 		5D715C3E242520210012940F /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				5D0C781524350366000B786E /* AlertsAssembly.swift */,
 				5D715C55242635440012940F /* GlobalCoordinator.swift */,
 				5D715C602426910E0012940F /* Models */,
 				5D715C612426912A0012940F /* ViewControllers */,
@@ -163,6 +172,7 @@
 				5D7A50D723D4E7AB00EFA557 /* CircleLoadingView.swift */,
 				5D715C4B242587DA0012940F /* LineView.swift */,
 				5D715C5324262B2B0012940F /* StartButton.swift */,
+				5D0C78112434F87F000B786E /* TestApiView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -216,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				5D715C622426915D0012940F /* HandShakeUserModel.swift */,
+				5D0C78132434FD82000B786E /* APIResponseModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -243,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				5D715C4D242614C40012940F /* HandShakeGraphStartViewController.swift */,
+				5D0C780F2434F7C2000B786E /* HandShakeGraphStartViewController+Constraints.swift */,
 				5D715C5124261F450012940F /* HandShakeGraphStartBuilder.swift */,
 			);
 			name = HandShakeGraphStartViewController;
@@ -469,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D7A50D423D2886700EFA557 /* BaseChain.swift in Sources */,
+				5D0C78122434F87F000B786E /* TestApiView.swift in Sources */,
 				5D715C5E24263EE80012940F /* ChainOfChainsCell.swift in Sources */,
 				5D715C4624256CD90012940F /* HandShakeGraphCell.swift in Sources */,
 				5D715C4424256C8A0012940F /* HandShakeGraphCollectionView.swift in Sources */,
@@ -479,15 +492,18 @@
 				5D7A50D823D4E7AB00EFA557 /* CircleLoadingView.swift in Sources */,
 				5D715C56242635440012940F /* GlobalCoordinator.swift in Sources */,
 				5D715C4C242587DA0012940F /* LineView.swift in Sources */,
+				5D0C781624350366000B786E /* AlertsAssembly.swift in Sources */,
 				5D715C5C24263ED90012940F /* ChainOfChainsItem.swift in Sources */,
 				5DC27D4823CE440E000F398A /* HackTravel.xcdatamodeld in Sources */,
 				5DC27D4223CE440E000F398A /* HandShakeResultViewController.swift in Sources */,
 				5D715C5A24263E7F0012940F /* ChainOfChainsCollectionView.swift in Sources */,
 				5DC27D6623CE4B86000F398A /* Debugger.swift in Sources */,
 				5DC27D4023CE440E000F398A /* AppDelegate.swift in Sources */,
+				5D0C78142434FD82000B786E /* APIResponseModel.swift in Sources */,
 				5D715C5424262B2B0012940F /* StartButton.swift in Sources */,
 				5D715C67242693010012940F /* HandShakeResultItemBuilder.swift in Sources */,
 				5D715C5224261F450012940F /* HandShakeGraphStartBuilder.swift in Sources */,
+				5D0C78102434F7C2000B786E /* HandShakeGraphStartViewController+Constraints.swift in Sources */,
 				5D715C48242572530012940F /* HandShakeGraphItem.swift in Sources */,
 				5D715C6B242697820012940F /* FakeMakerData.swift in Sources */,
 			);

@@ -24,9 +24,6 @@ final class HandShakeResultViewController: UIViewController {
 		view.backgroundColor = .white
 		Debugger.log(type: .info, logString: "\(self.debugDescription) viewDidLoad")
 
-		BaseChain.makeRequest(type: .test, completion: { data in
-			Debugger.log(type: .magic, logString: "\(String(data: data ?? Data(), encoding: .utf8) ?? "nil")")
-		})
 		//testLoadingView()
 		setupHandShakeGraphCollection()
 		testcollection.items = builder.makeItemsForResultCollectionFrom(data: FakeMakerData().makeFakeData())

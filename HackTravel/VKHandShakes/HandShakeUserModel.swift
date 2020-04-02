@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class HandShakeUserModel {
+final class HandShakeUserModel: Decodable {
 	let name: String
 	let surname: String
 	let imageUrl: String

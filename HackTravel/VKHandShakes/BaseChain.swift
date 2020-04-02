@@ -16,6 +16,7 @@ enum BaseChain {
 	/// - test: тестовый url
 	enum RequestType: String {
 		case test = "https://httpbin.org/get"
+		case testApi = "http://77.246.158.24:8088"
 	}
 
 	/// Сделать get-запрос на сервер
@@ -23,11 +24,11 @@ enum BaseChain {
 	/// - Parameters:
 	///   - type: Тип запроса(url)
 	///   - completion: Комплишн блок с данными
-	static func makeRequest(type: RequestType, completion: @escaping (Data?) -> Void) {
+	static func makeRequest(type: RequestType, parameters: String = "", completion: @escaping (Data?) -> Void) {
 		Debugger.log(type: .info, logString: "Запуск BaseChain")
-		let url = URL(string: type.rawValue)!
+		let url = URL(string: type.rawValue + parameters)!
 		let task = URLSession.shared.dataTask(with: url) { data, response, error in
-			Debugger.log(type: .info, logString: "Попытка выполнить запрос: " + type.rawValue)
+			Debugger.log(type: .info, logString: "Попытка выполнить запрос: " + type.rawValue + parameters)
 
 			if let error = error {
 				Debugger.log(type: .error, logString: "error: \(error.localizedDescription)")

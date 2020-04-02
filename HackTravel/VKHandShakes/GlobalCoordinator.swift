@@ -21,8 +21,8 @@ final class GlobalCoordinator {
 		}
 	}
 
-		enum ControllerType {
-			case handShakeGraphStartViewController
-			case handShakeResultViewController
-		}
+	enum ControllerType {
+		case handShakeGraphStartViewController
+		case handShakeResultViewController
+	}
 }

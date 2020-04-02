@@ -1,0 +1,26 @@
+{
+    "result": [
+        {
+            "chain": [
+                {
+                    "user": {
+                        "last_name": "Трунова",
+                        "name": "Кристина",
+                        "photo": "https://sun1-95.userapi.com/bxRxbaQ1UK-TxNJor9LduTDll58Eqx-XBoDqcA/pubpLXBtJQ0.jpg?ava=1",
+                        "url": "https://vk.com/id137819652"
+                    }
+                },
+                {
+                    "user": {
+                        "last_name": "Петров",
+                        "name": "Саня",
+                        "photo": "https://sun9-2.userapi.com/c855428/v855428951/133d63/Nj090DYhu-U.jpg?ava=1",
+                        "url": "https://vk.com/id221436497"
+                    }
+                }
+            ]
+        }
+    ],
+    "resultCode": "1",
+    "resultDescription": "Success"
+}

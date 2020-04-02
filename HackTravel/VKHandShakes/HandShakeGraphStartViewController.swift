@@ -19,16 +19,19 @@ final class HandShakeGraphStartViewController: UIViewController {
 	let labelForSecondTextField: UILabel
 	let startButton: UIButton
 	let loadingAnimationView: AnimationView
+	let testApiView = TestApiView()
 
 	// MARK: - Life cycle
 
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
+		AlertsAssembly.showErrorAlert(type: .m1, description: nil)
 		navigationController?.setNavigationBarHidden(true, animated: true)
 	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		testApiView.checkApi()
 		view.backgroundColor = .white
 		setupUI()
 	}
@@ -51,47 +54,4 @@ final class HandShakeGraphStartViewController: UIViewController {
 
 	// MARK: - Private methods
 
-	private func setupUI() {
-		[labelForFirstTextField, firstUserField,
-		 labelForSecondTextField, secondUserField, startButton,
-		 loadingAnimationView].forEach { addableView in
-			addableView.translatesAutoresizingMaskIntoConstraints = false
-			self.view.addSubview(addableView)
-		}
-		NSLayoutConstraint.activate([
-			//Первое поле + лейблы
-			labelForFirstTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-														constant: GlonalConstants.screenHeight * 0.2),
-			labelForFirstTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-			labelForFirstTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-			labelForFirstTextField.heightAnchor.constraint(equalToConstant: 40),
-
-			firstUserField.centerYAnchor.constraint(equalTo: labelForFirstTextField.centerYAnchor),
-			firstUserField.leadingAnchor.constraint(equalTo: labelForFirstTextField.leadingAnchor, constant: 13),
-			firstUserField.trailingAnchor.constraint(equalTo: labelForFirstTextField.trailingAnchor, constant: -13),
-
-			//Второе поле + лейблы
-			labelForSecondTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-														 constant: GlonalConstants.screenHeight * 0.4),
-			labelForSecondTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-			labelForSecondTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-			labelForSecondTextField.heightAnchor.constraint(equalToConstant: 40),
-
-			secondUserField.centerYAnchor.constraint(equalTo: labelForSecondTextField.centerYAnchor),
-			secondUserField.leadingAnchor.constraint(equalTo: labelForSecondTextField.leadingAnchor, constant: 13),
-			secondUserField.trailingAnchor.constraint(equalTo: labelForSecondTextField.trailingAnchor, constant: -13),
-
-			//Кнопка старта
-			startButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-											 constant: GlonalConstants.screenHeight * 0.58),
-			startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-			startButton.widthAnchor.constraint(equalToConstant: 100),
-			startButton.heightAnchor.constraint(equalToConstant: 40),
-			//LoadingAnimationView
-			loadingAnimationView.topAnchor.constraint(equalTo: secondUserField.bottomAnchor),
-			loadingAnimationView.bottomAnchor.constraint(equalTo: startButton.topAnchor),
-			loadingAnimationView.widthAnchor.constraint(equalToConstant: GlonalConstants.screenHeight * (0.58 - 0.4) - 13),
-			loadingAnimationView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-		])
-	}
 }

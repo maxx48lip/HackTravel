@@ -32,7 +32,6 @@ final class HandShakeGraphStartBuilder {
 	func makeStartButton() -> UIButton {
 		let button = StartButton()
 		button.titleText = "Start"
-		button.addTarget(self, action: #selector(startButtonAction), for: .touchUpInside)
 		return button
 	}
 
@@ -41,11 +40,5 @@ final class HandShakeGraphStartBuilder {
 		view.contentMode = .scaleToFill
 		view.loopMode = .autoReverse
 		return view
-	}
-
-	@objc func startButtonAction() {
-		//loadingAnimationView.isHidden = true
-		//loadingAnimationView.play()
-		GlobalCoordinator.open(.handShakeResultViewController)
 	}
 }
