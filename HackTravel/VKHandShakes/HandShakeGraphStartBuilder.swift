@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Lottie
 
 final class HandShakeGraphStartBuilder {
 
@@ -27,13 +26,15 @@ final class HandShakeGraphStartBuilder {
 		let textField = UITextField()
 		textField.placeholder = "id1"
 		textField.text = "136861066"
+		textField.textColor = .black
 		return textField
 	}
-	
+
 	func makeTextField2() -> UITextField {
 		let textField = UITextField()
 		textField.placeholder = "id2"
 		textField.text = "inchillwetrust"
+		textField.textColor = .black
 		return textField
 	}
 
@@ -41,12 +42,5 @@ final class HandShakeGraphStartBuilder {
 		let button = StartButton()
 		button.titleText = "Start"
 		return button
-	}
-
-	func makeAnimView() -> AnimationView {
-		let view = AnimationView(name: "Files/loading_dots")
-		view.contentMode = .scaleToFill
-		view.loopMode = .autoReverse
-		return view
 	}
 }

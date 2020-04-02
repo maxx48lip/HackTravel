@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Lottie
 
 final class HandShakeGraphStartViewController: UIViewController {
 
@@ -18,7 +17,6 @@ final class HandShakeGraphStartViewController: UIViewController {
 	let secondUserField: UITextField
 	let labelForSecondTextField: UILabel
 	let startButton: UIButton
-	let loadingAnimationView: AnimationView
 	let testApiView = TestApiView()
 
 	// MARK: - Life cycle
@@ -32,6 +30,8 @@ final class HandShakeGraphStartViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		testApiView.checkApi()
+		firstUserField.delegate = self
+		secondUserField.delegate = self
 		view.backgroundColor = .white
 		setupUI()
 	}
@@ -44,7 +44,6 @@ final class HandShakeGraphStartViewController: UIViewController {
 		self.labelForFirstTextField = builder.makeLabelForTextField()
 		self.labelForSecondTextField = builder.makeLabelForTextField()
 		self.startButton = builder.makeStartButton()
-		self.loadingAnimationView = builder.makeAnimView()
 		super.init(nibName: nil, bundle: nil)
 	}
 
@@ -54,4 +53,11 @@ final class HandShakeGraphStartViewController: UIViewController {
 
 	// MARK: - Private methods
 
+}
+
+extension HandShakeGraphStartViewController: UITextFieldDelegate {
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		self.view.endEditing(true)
+		return false
+	}
 }

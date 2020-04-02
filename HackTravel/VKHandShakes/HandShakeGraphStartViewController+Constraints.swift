@@ -13,7 +13,7 @@ extension HandShakeGraphStartViewController {
 	func setupUI() {
 		[labelForFirstTextField, firstUserField,
 		 labelForSecondTextField, secondUserField, startButton,
-		 loadingAnimationView, testApiView].forEach { addableView in
+		 testApiView].forEach { addableView in
 			addableView.translatesAutoresizingMaskIntoConstraints = false
 			self.view.addSubview(addableView)
 		}
@@ -51,20 +51,12 @@ extension HandShakeGraphStartViewController {
 			startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 			startButton.widthAnchor.constraint(equalToConstant: 100),
 			startButton.heightAnchor.constraint(equalToConstant: 40),
-			//LoadingAnimationView
-			loadingAnimationView.topAnchor.constraint(equalTo: secondUserField.bottomAnchor),
-			loadingAnimationView.bottomAnchor.constraint(equalTo: startButton.topAnchor),
-			loadingAnimationView.widthAnchor.constraint(equalToConstant: GlonalConstants.screenHeight * (0.58 - 0.4) - 13),
-			loadingAnimationView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
 		])
 
-		loadingAnimationView.isHidden = true
 		startButton.addTarget(self, action: #selector(startButtonAction), for: .touchUpInside)
 	}
 
 	@objc func startButtonAction() {
-		loadingAnimationView.isHidden = false
-		loadingAnimationView.play()
 		testJson(completion: { chains in GlobalCoordinator.open(.handShakeResultViewController(chains: chains)) })
 	}
 
@@ -85,7 +77,7 @@ extension HandShakeGraphStartViewController {
 									AlertsAssembly.showErrorAlert(type: .unknown)
 								}
 								DispatchQueue.main.async {
-									self?.loadingAnimationView.isHidden = true
+									self?.startButton.isHidden = true
 								}
 		})
 	}
