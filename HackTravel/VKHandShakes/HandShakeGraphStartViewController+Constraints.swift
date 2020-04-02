@@ -65,6 +65,28 @@ extension HandShakeGraphStartViewController {
 	@objc func startButtonAction() {
 		loadingAnimationView.isHidden = false
 		loadingAnimationView.play()
-		GlobalCoordinator.open(.handShakeResultViewController)
+		testJson(completion: { chains in GlobalCoordinator.open(.handShakeResultViewController(chains: chains)) })
+	}
+
+	private func testJson(completion: @escaping ([ChainsModel]) -> Void) {
+		BaseChain.makeRequest(type: .handshake(user1: firstUserField.text ?? "136861066",
+											   user2: secondUserField.text ?? "inchillwetrust",
+											   serverInDebugMode: true),
+							  completion: { [weak self] data in
+
+			Debugger.log(type: .magic, logString: "\(String(data: data ?? Data(), encoding: .utf8) ?? "nil")")
+								if let data = data,
+									let model = try? JSONDecoder().decode(APIResponseModel.self, from: data),
+									let chains = model.result {
+									completion(chains)
+									Debugger.log(type: .magic, logString: "\(String(data: data, encoding: .utf8) ?? "nil")")
+								} else {
+									Debugger.log(type: .error, logString: "Response Data is nil")
+									AlertsAssembly.showErrorAlert(type: .unknown)
+								}
+								DispatchQueue.main.async {
+									self?.loadingAnimationView.isHidden = true
+								}
+		})
 	}
 }

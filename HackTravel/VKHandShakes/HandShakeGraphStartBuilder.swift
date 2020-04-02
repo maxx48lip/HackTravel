@@ -23,9 +23,17 @@ final class HandShakeGraphStartBuilder {
 		return label
 	}
 
-	func makeTextField() -> UITextField {
+	func makeTextField1() -> UITextField {
 		let textField = UITextField()
 		textField.placeholder = "id1"
+		textField.text = "136861066"
+		return textField
+	}
+	
+	func makeTextField2() -> UITextField {
+		let textField = UITextField()
+		textField.placeholder = "id2"
+		textField.text = "inchillwetrust"
 		return textField
 	}
 

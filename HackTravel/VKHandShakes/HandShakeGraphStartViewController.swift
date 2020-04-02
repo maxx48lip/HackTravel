@@ -25,7 +25,7 @@ final class HandShakeGraphStartViewController: UIViewController {
 
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		AlertsAssembly.showErrorAlert(type: .m1, description: nil)
+		//AlertsAssembly.showErrorAlert(type: .m1, description: nil)
 		navigationController?.setNavigationBarHidden(true, animated: true)
 	}
 
@@ -39,8 +39,8 @@ final class HandShakeGraphStartViewController: UIViewController {
 	// MARK: - Initializers
 
 	init() {
-		self.firstUserField = builder.makeTextField()
-		self.secondUserField = builder.makeTextField()
+		self.firstUserField = builder.makeTextField1()
+		self.secondUserField = builder.makeTextField2()
 		self.labelForFirstTextField = builder.makeLabelForTextField()
 		self.labelForSecondTextField = builder.makeLabelForTextField()
 		self.startButton = builder.makeStartButton()

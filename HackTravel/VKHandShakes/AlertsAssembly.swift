@@ -11,17 +11,19 @@ import UIKit
 final class AlertsAssembly {
 
 	static func showErrorAlert(type: ErrorAlertType, description: String? = nil) {
-		Debugger.log(type: .info, logString: "Showing alert: " + type.rawValue)
-		let alert = UIAlertController(title: "Error", message: nil, preferredStyle: .alert)
-		var message = type.rawValue
-		if let description = description {
-			message += "\n Additional Info: " + description
+		Debugger.log(type: .info, logString: "Showing alert: " + type.rawValue + (description ?? ""))
+		DispatchQueue.main.async {
+			let alert = UIAlertController(title: "Error", message: nil, preferredStyle: .alert)
+			var message = type.rawValue
+			if let description = description {
+				message += "\n Additional Info: " + description
+			}
+			let attributedText = NSMutableAttributedString(string: message, attributes: [.font: UIFont.systemFont(ofSize: 16)])
+			alert.setValue(attributedText, forKey: "attributedMessage")
+			alert.view.tintColor = UIColor.red
+			alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+			GlobalCoordinator.rootViewController.present(alert, animated: true)
 		}
-		let attributedText = NSMutableAttributedString(string: message, attributes: [.font: UIFont.systemFont(ofSize: 16)])
-		alert.setValue(attributedText, forKey: "attributedMessage")
-		alert.view.tintColor = UIColor.red
-		alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
-		GlobalCoordinator.rootViewController.present(alert, animated: true)
 	}
 
 	// swiftlint:disable identifier_name

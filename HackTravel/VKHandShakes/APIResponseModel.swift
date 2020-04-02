@@ -12,7 +12,7 @@ import Foundation
 struct APIResponseModel: Decodable {
 	let resultCode: Int
 	let resultDescription: String
-	let result: AnyObject?
+	let result: [ChainsModel]?
 
 	private enum CodingKeys: String, CodingKey {
 		case resultCode
@@ -36,11 +36,11 @@ struct APIResponseModel: Decodable {
 		self.resultCode = code
 		if code < 0 {
 			let type: AlertsAssembly.ErrorAlertType = AlertsAssembly.mapTypes[code] ?? .unknown
-			AlertsAssembly.showErrorAlert(type: type)
+			//AlertsAssembly.showErrorAlert(type: type)
 		}
 		self.resultDescription = try container.decode(String.self, forKey: .resultDescription)
 		if resultCode == 1 {
-			result = try container.decode(HandShakeUserModel.self, forKey: .result)
+			result = try container.decode([ChainsModel].self, forKey: .result)
 		} else {
 			result = nil
 		}

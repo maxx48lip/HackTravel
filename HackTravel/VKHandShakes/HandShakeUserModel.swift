@@ -9,13 +9,12 @@
 import Foundation
 
 final class HandShakeUserModel: Decodable {
+	let lastName: String
 	let name: String
-	let surname: String
-	let imageUrl: String
+	let photo: String
+	let url: String
+}
 
-	init(name: String, surname: String, imageUrl: String) {
-		self.name = name
-		self.surname = surname
-		self.imageUrl = imageUrl
-	}
+final class UserChain: Decodable {
+	let user: HandShakeUserModel
 }

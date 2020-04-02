@@ -12,6 +12,16 @@ final class HandShakeResultViewController: UIViewController {
 
 	let testcollection = ChainOfChainsCollectionView(frame: .zero)
 	let builder = HandShakeResultItemBuilder()
+	let chains: [ChainsModel]
+
+	init(chains: [ChainsModel] = []) {
+		self.chains = chains
+		super.init(nibName: nil, bundle: nil)
+	}
+
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
 
 	// MARK: LifeCycle
 	override func viewWillAppear(_ animated: Bool) {
@@ -26,7 +36,7 @@ final class HandShakeResultViewController: UIViewController {
 
 		//testLoadingView()
 		setupHandShakeGraphCollection()
-		testcollection.items = builder.makeItemsForResultCollectionFrom(data: FakeMakerData().makeFakeData())
+		testcollection.items = builder.makeItemsForResultCollectionFrom(chains: chains)
 	}
 
 	// MARK: - Private methods

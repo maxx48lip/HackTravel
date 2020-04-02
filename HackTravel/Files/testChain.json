@@ -1,10 +1,12 @@
 {
-    "result": [
-        {
-            "chain": [
+    "result":
+	[
+		{
+            "chain":
+			[
                 {
                     "user": {
-                        "last_name": "Трунова",
+                        "lastName": "Трунова",
                         "name": "Кристина",
                         "photo": "https://sun1-95.userapi.com/bxRxbaQ1UK-TxNJor9LduTDll58Eqx-XBoDqcA/pubpLXBtJQ0.jpg?ava=1",
                         "url": "https://vk.com/id137819652"
@@ -12,7 +14,28 @@
                 },
                 {
                     "user": {
-                        "last_name": "Петров",
+                        "lastName": "Петров",
+                        "name": "Саня",
+                        "photo": "https://sun9-2.userapi.com/c855428/v855428951/133d63/Nj090DYhu-U.jpg?ava=1",
+                        "url": "https://vk.com/id221436497"
+                    }
+                }
+            ]
+        },
+		{
+            "chain":
+			[
+                {
+                    "user": {
+                        "lastName": "Трунова",
+                        "name": "Кристина",
+                        "photo": "https://sun1-95.userapi.com/bxRxbaQ1UK-TxNJor9LduTDll58Eqx-XBoDqcA/pubpLXBtJQ0.jpg?ava=1",
+                        "url": "https://vk.com/id137819652"
+                    }
+                },
+                {
+                    "user": {
+                        "lastName": "Петров",
                         "name": "Саня",
                         "photo": "https://sun9-2.userapi.com/c855428/v855428951/133d63/Nj090DYhu-U.jpg?ava=1",
                         "url": "https://vk.com/id221436497"

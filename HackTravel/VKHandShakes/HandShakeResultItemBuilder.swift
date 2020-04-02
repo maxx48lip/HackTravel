@@ -15,8 +15,25 @@ final class HandShakeResultItemBuilder {
 			var itemsWithUsers: [HandShakeGraphItem] = []
 			for user in chainOfUsers {
 				itemsWithUsers.append(HandShakeGraphItem(name: user.name,
-														 surname: user.surname,
-														 image: user.imageUrl))
+														 surname: user.lastName,
+														 image: user.photo))
+			}
+			let collectionWithChain = HandShakeGraphCollectionView(frame: .zero)
+			collectionWithChain.items = itemsWithUsers
+			resultItems.append(ChainOfChainsItem(collectionView: collectionWithChain))
+		}
+		return resultItems
+	}
+
+	func makeItemsForResultCollectionFrom(chains: [ChainsModel]) -> [ChainOfChainsItem] {
+		var resultItems: [ChainOfChainsItem] = []
+		for chainOfUsers in chains {
+			var itemsWithUsers: [HandShakeGraphItem] = []
+			for chainUser in chainOfUsers.chain {
+				let user = chainUser.user
+				itemsWithUsers.append(HandShakeGraphItem(name: user.name,
+														 surname: user.lastName,
+														 image: user.photo))
 			}
 			let collectionWithChain = HandShakeGraphCollectionView(frame: .zero)
 			collectionWithChain.items = itemsWithUsers

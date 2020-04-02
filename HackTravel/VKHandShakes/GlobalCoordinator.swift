@@ -15,14 +15,20 @@ final class GlobalCoordinator {
 		Debugger.log(type: .info, logString: "Open \(viewcontroller)")
 		switch viewcontroller {
 		case .handShakeGraphStartViewController:
+			DispatchQueue.main.async {
+				rootViewController.navigationController?.pushViewController(HandShakeGraphStartViewController(), animated: true)
+			}
 			rootViewController.navigationController?.pushViewController(HandShakeGraphStartViewController(), animated: true)
-		case .handShakeResultViewController:
-			rootViewController.navigationController?.pushViewController(HandShakeResultViewController(), animated: true)
+		case .handShakeResultViewController(chains: let chains):
+				DispatchQueue.main.async {
+					rootViewController.navigationController?
+						.pushViewController(HandShakeResultViewController(chains: chains), animated: true)
+				}
 		}
 	}
 
 	enum ControllerType {
 		case handShakeGraphStartViewController
-		case handShakeResultViewController
+		case handShakeResultViewController(chains: [ChainsModel])
 	}
 }

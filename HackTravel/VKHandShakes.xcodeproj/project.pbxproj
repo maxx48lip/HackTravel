@@ -12,6 +12,9 @@
 		5D0C78122434F87F000B786E /* TestApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C78112434F87F000B786E /* TestApiView.swift */; };
 		5D0C78142434FD82000B786E /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C78132434FD82000B786E /* APIResponseModel.swift */; };
 		5D0C781624350366000B786E /* AlertsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C781524350366000B786E /* AlertsAssembly.swift */; };
+		5D0C781824361BB0000B786E /* ChainsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C781724361BB0000B786E /* ChainsModel.swift */; };
+		5D0C78202436616A000B786E /* Pods_VKHandShakes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0C781F2436616A000B786E /* Pods_VKHandShakes.framework */; };
+		5D0C78212436616A000B786E /* Pods_VKHandShakes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0C781F2436616A000B786E /* Pods_VKHandShakes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D3265942434CF5C00950F31 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3265932434CF5C00950F31 /* Default-568h@2x.png */; };
 		5D715C4424256C8A0012940F /* HandShakeGraphCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */; };
 		5D715C4624256CD90012940F /* HandShakeGraphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4524256CD90012940F /* HandShakeGraphCell.swift */; };
@@ -38,7 +41,6 @@
 		5DC27D5823CE4410000F398A /* VKHandShakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D5723CE4410000F398A /* VKHandShakesTests.swift */; };
 		5DC27D6623CE4B86000F398A /* Debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC27D6523CE4B86000F398A /* Debugger.swift */; };
 		5DC27D6923CE5597000F398A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5DC27D6823CE5597000F398A /* README.md */; };
-		B705308F23EBAFD4BCC89C4B /* Pods_VKHandShakes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884648190E68EF9BBD6EF238 /* Pods_VKHandShakes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +53,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5D0C781C24366134000B786E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D0C78212436616A000B786E /* Pods_VKHandShakes.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5D0C780D2434DA1C000B786E /* Files */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Files; sourceTree = SOURCE_ROOT; };
 		5D0C780F2434F7C2000B786E /* HandShakeGraphStartViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HandShakeGraphStartViewController+Constraints.swift"; sourceTree = "<group>"; };
 		5D0C78112434F87F000B786E /* TestApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiView.swift; sourceTree = "<group>"; };
 		5D0C78132434FD82000B786E /* APIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
 		5D0C781524350366000B786E /* AlertsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsAssembly.swift; sourceTree = "<group>"; };
+		5D0C781724361BB0000B786E /* ChainsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainsModel.swift; sourceTree = "<group>"; };
+		5D0C781924366133000B786E /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D0C781F2436616A000B786E /* Pods_VKHandShakes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_VKHandShakes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3265932434CF5C00950F31 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCollectionView.swift; sourceTree = "<group>"; };
 		5D715C4524256CD90012940F /* HandShakeGraphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCell.swift; sourceTree = "<group>"; };
@@ -97,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B705308F23EBAFD4BCC89C4B /* Pods_VKHandShakes.framework in Frameworks */,
+				5D0C78202436616A000B786E /* Pods_VKHandShakes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +133,8 @@
 		14A4589E8B3A8D31C1337CCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D0C781F2436616A000B786E /* Pods_VKHandShakes.framework */,
+				5D0C781924366133000B786E /* Lottie.framework */,
 				884648190E68EF9BBD6EF238 /* Pods_VKHandShakes.framework */,
 			);
 			name = Frameworks;
@@ -227,6 +248,7 @@
 			children = (
 				5D715C622426915D0012940F /* HandShakeUserModel.swift */,
 				5D0C78132434FD82000B786E /* APIResponseModel.swift */,
+				5D0C781724361BB0000B786E /* ChainsModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -328,6 +350,7 @@
 				5DC27D3A23CE440E000F398A /* Resources */,
 				5DC27D6723CE4E3E000F398A /* Swift Lint */,
 				3D72B7530A3A8225E32C8FF6 /* [CP] Embed Pods Frameworks */,
+				5D0C781C24366134000B786E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -484,6 +507,7 @@
 				5D0C78122434F87F000B786E /* TestApiView.swift in Sources */,
 				5D715C5E24263EE80012940F /* ChainOfChainsCell.swift in Sources */,
 				5D715C4624256CD90012940F /* HandShakeGraphCell.swift in Sources */,
+				5D0C781824361BB0000B786E /* ChainsModel.swift in Sources */,
 				5D715C4424256C8A0012940F /* HandShakeGraphCollectionView.swift in Sources */,
 				5D7A50D623D4E44100EFA557 /* ColorPallete.swift in Sources */,
 				5D715C632426915D0012940F /* HandShakeUserModel.swift in Sources */,
