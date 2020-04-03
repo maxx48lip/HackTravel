@@ -10,6 +10,9 @@ import UIKit
 
 final class TestApiView: UIView {
 	func checkApi() {
+		layer.cornerRadius = 4
+		layer.borderColor = UIColor.black.cgColor
+		layer.borderWidth = 0.5
 		backgroundColor = .red
 		BaseChain.makeRequest(type: .testApi, completion: { [weak self] data in
 			Debugger.log(type: .magic, logString: "\(String(data: data ?? Data(), encoding: .utf8) ?? "nil")")

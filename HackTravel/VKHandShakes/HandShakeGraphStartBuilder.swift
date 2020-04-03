@@ -25,7 +25,7 @@ final class HandShakeGraphStartBuilder {
 	func makeTextField1() -> UITextField {
 		let textField = UITextField()
 		textField.placeholder = "id1"
-		textField.text = "136861066"
+		textField.text = "3664185"
 		textField.textColor = .black
 		return textField
 	}
@@ -33,7 +33,7 @@ final class HandShakeGraphStartBuilder {
 	func makeTextField2() -> UITextField {
 		let textField = UITextField()
 		textField.placeholder = "id2"
-		textField.text = "inchillwetrust"
+		textField.text = "271057793"
 		textField.textColor = .black
 		return textField
 	}

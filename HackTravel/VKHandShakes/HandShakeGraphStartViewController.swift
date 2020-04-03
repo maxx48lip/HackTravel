@@ -18,12 +18,12 @@ final class HandShakeGraphStartViewController: UIViewController {
 	let labelForSecondTextField: UILabel
 	let startButton: UIButton
 	let testApiView = TestApiView()
+	let loadingView = LoadingView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
 
 	// MARK: - Life cycle
 
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		//AlertsAssembly.showErrorAlert(type: .m1, description: nil)
 		navigationController?.setNavigationBarHidden(true, animated: true)
 	}
 

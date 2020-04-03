@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		5D0C78142434FD82000B786E /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C78132434FD82000B786E /* APIResponseModel.swift */; };
 		5D0C781624350366000B786E /* AlertsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C781524350366000B786E /* AlertsAssembly.swift */; };
 		5D0C781824361BB0000B786E /* ChainsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C781724361BB0000B786E /* ChainsModel.swift */; };
+		5D1C79BE2436A58700E23170 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C79BD2436A58700E23170 /* LoadingView.swift */; };
 		5D3265942434CF5C00950F31 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3265932434CF5C00950F31 /* Default-568h@2x.png */; };
 		5D715C4424256C8A0012940F /* HandShakeGraphCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */; };
 		5D715C4624256CD90012940F /* HandShakeGraphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D715C4524256CD90012940F /* HandShakeGraphCell.swift */; };
@@ -58,6 +59,7 @@
 		5D0C78132434FD82000B786E /* APIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
 		5D0C781524350366000B786E /* AlertsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsAssembly.swift; sourceTree = "<group>"; };
 		5D0C781724361BB0000B786E /* ChainsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainsModel.swift; sourceTree = "<group>"; };
+		5D1C79BD2436A58700E23170 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		5D3265932434CF5C00950F31 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5D715C4324256C8A0012940F /* HandShakeGraphCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCollectionView.swift; sourceTree = "<group>"; };
 		5D715C4524256CD90012940F /* HandShakeGraphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeGraphCell.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				5D715C4B242587DA0012940F /* LineView.swift */,
 				5D715C5324262B2B0012940F /* StartButton.swift */,
 				5D0C78112434F87F000B786E /* TestApiView.swift */,
+				5D1C79BD2436A58700E23170 /* LoadingView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				5D715C5E24263EE80012940F /* ChainOfChainsCell.swift in Sources */,
 				5D715C4624256CD90012940F /* HandShakeGraphCell.swift in Sources */,
 				5D0C781824361BB0000B786E /* ChainsModel.swift in Sources */,
+				5D1C79BE2436A58700E23170 /* LoadingView.swift in Sources */,
 				5D715C4424256C8A0012940F /* HandShakeGraphCollectionView.swift in Sources */,
 				5D7A50D623D4E44100EFA557 /* ColorPallete.swift in Sources */,
 				5D715C632426915D0012940F /* HandShakeUserModel.swift in Sources */,
@@ -598,6 +602,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5PFXU6236;
 				INFOPLIST_FILE = "$(SRCROOT)/VKHandShakes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,6 +621,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5PFXU6236;
 				INFOPLIST_FILE = "$(SRCROOT)/VKHandShakes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -12,7 +12,7 @@ extension HandShakeGraphStartViewController {
 
 	func setupUI() {
 		[labelForFirstTextField, firstUserField,
-		 labelForSecondTextField, secondUserField, startButton,
+		 labelForSecondTextField, secondUserField, loadingView, startButton,
 		 testApiView].forEach { addableView in
 			addableView.translatesAutoresizingMaskIntoConstraints = false
 			self.view.addSubview(addableView)
@@ -51,16 +51,24 @@ extension HandShakeGraphStartViewController {
 			startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 			startButton.widthAnchor.constraint(equalToConstant: 100),
 			startButton.heightAnchor.constraint(equalToConstant: 40),
+			//LoadingView
+			loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+			loadingView.centerYAnchor.constraint(equalTo: startButton.centerYAnchor),
+			loadingView.widthAnchor.constraint(equalToConstant: 100),
+			loadingView.heightAnchor.constraint(equalToConstant: 100)
 		])
-
+		loadingView.isHidden = true
 		startButton.addTarget(self, action: #selector(startButtonAction), for: .touchUpInside)
 	}
 
 	@objc func startButtonAction() {
-		testJson(completion: { chains in GlobalCoordinator.open(.handShakeResultViewController(chains: chains)) })
+		startButton.isHidden = true
+		loadingView.isHidden = false
+		//GlobalCoordinator.open(.handShakeResultViewController(chains: FakeMakerData().makeFakeData()))
+		loadJson(completion: { chains in GlobalCoordinator.open(.handShakeResultViewController(chains: chains)) })
 	}
 
-	private func testJson(completion: @escaping ([ChainsModel]) -> Void) {
+	private func loadJson(completion: @escaping ([ChainsModel]) -> Void) {
 		BaseChain.makeRequest(type: .handshake(user1: firstUserField.text ?? "136861066",
 											   user2: secondUserField.text ?? "inchillwetrust",
 											   serverInDebugMode: true),
@@ -77,7 +85,8 @@ extension HandShakeGraphStartViewController {
 									AlertsAssembly.showErrorAlert(type: .unknown)
 								}
 								DispatchQueue.main.async {
-									self?.startButton.isHidden = true
+									self?.startButton.isHidden = false
+									self?.loadingView.isHidden = true
 								}
 		})
 	}

@@ -9,29 +9,16 @@
 import Foundation
 
 final class FakeMakerData {
-//	let sanya = HandShakeUserModel(name: "Саня",
-//								   lastName: "Петров",
-//								   photo: "https://sun9-65.userapi.com/c855428/v855428951/133d62/CJIm4GRvOiM.jpg")
-//
-//	let max = HandShakeUserModel(name: "Макс",
-//							   	lastName: "Павлов",
-//								photo: "https://sun9-60.userapi.com/c836739/v836739483/11e0c/v9sVw7lv9fM.jpg")
-//	let valera = HandShakeUserModel(name: "Валера",
-//									lastName: "Белов",
-//									photo: "https://sun9-28.userapi.com/c844520/v844520398/1ff28c/VCCQasp9L2U.jpg")
-//	let anya = HandShakeUserModel(name: "Аня",
-//								  lastName: "Зелениска",
-//								  photo: "https://sun9-10.userapi.com/c205824/v205824565/67195/KxJk9zpVyYQ.jpg")
-//	let kirill = HandShakeUserModel(name: "Кирилл",
-//									lastName: "Кузнецов",
-//									photo: "https://sun9-8.userapi.com/c836632/v836632247/2c837/yEts-LtlgOo.jpg")
-//	let leha = HandShakeUserModel(name: "Леха",
-//								  lastName: "Добросердов",
-//								  photo: "https://sun9-69.userapi.com/c857720/v857720851/33f63/hBQ_pU2Y-Go.jpg")
-
-	func makeFakeData() -> [[HandShakeUserModel]] {
-//		let testData = [[sanya, leha, max, valera, anya, kirill],
-//						[kirill, max, valera, leha, sanya, anya]]
-		return []
+	func makeFakeData() -> [ChainsModel] {
+		guard
+			let path = Bundle.main.path(forResource: "Files/testChain", ofType: "json"),
+			let jsonData = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe),
+			let infoData = try? JSONDecoder().decode(APIResponseModel.self, from: jsonData),
+			let result = infoData.result
+			else {
+				Debugger.log(type: .error, logString: "Fake Data can not be maked")
+				return []
+		}
+		return result
 	}
 }

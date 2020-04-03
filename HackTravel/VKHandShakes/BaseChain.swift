@@ -28,7 +28,11 @@ enum BaseChain {
 			case .testApi:
 				return serverAdress
 			case let .handshake(user1: user1, user2: user2, serverInDebugMode: debugMode):
-				return serverAdress + "/?method=handshake&users=\(user1),\(user2)&shouldUseDebug=\(debugMode)"
+				var debugModeString = "False"
+				if debugMode {
+					debugModeString = "True"
+				}
+				return serverAdress + "/?method=handshake&users=\(user1),\(user2)&shouldUseDebug=\(debugModeString)"
 			}
 		}
 	}

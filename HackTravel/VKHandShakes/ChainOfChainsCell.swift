@@ -24,7 +24,11 @@ final class ChainOfChainsCell: UICollectionViewCell {
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-		setupConstraints()
+	}
+
+	override func prepareForReuse() {
+		super.prepareForReuse()
+		collectionView?.removeFromSuperview()
 	}
 
 	private func setupConstraints() {

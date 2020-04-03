@@ -40,12 +40,13 @@ final class ChainOfChainsCollectionView: UICollectionView {
 //Отвечаю, что там только ячейки ChainOfChainsCell
 //swiftlint:disable force_cast
 extension ChainOfChainsCollectionView: UICollectionViewDataSource {
+
 	func collectionView(_ collectionView: UICollectionView,
 						cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseId,
 													  for: indexPath) as! ChainOfChainsCell
-		let item = items[indexPath.item]
+		let item = items[indexPath.row]
 		cell.singleChainCollectionView = item.collectionView
 
 		return cell

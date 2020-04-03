@@ -17,15 +17,7 @@ final class HandShakeGraphCollectionView: UICollectionView {
 	let testUrl = "https://sun9-65.userapi.com/c855428/v855428951/133d62/CJIm4GRvOiM.jpg"
 
 	init(frame: CGRect) {
-		items = [
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl),
-			HandShakeGraphItem(name: "Имя", surname: "Фамилия", image: testUrl)
-		]
+		items = []
 		super.init(frame: frame, collectionViewLayout: layout)
 		register(HandShakeGraphCell.self, forCellWithReuseIdentifier: reuseId)
 		layout.itemSize = CGSize(width: 180, height: 60)
@@ -54,7 +46,7 @@ extension HandShakeGraphCollectionView: UICollectionViewDataSource {
 
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseId,
 													  for: indexPath) as! HandShakeGraphCell
-		let item = items[indexPath.item]
+		let item = items[indexPath.row]
 
 		cell.name = item.name
 		cell.surname = item.surname
